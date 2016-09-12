@@ -1,0 +1,44 @@
+.side-nav .userView .background{
+	width: 125%;
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+}
+.user-name{
+	font-size: 24px;
+    font-weight: bold;
+    display: block;
+    color: black;
+    margin: 0px;
+    margin-top: -8%;
+    margin-bottom: 6%;
+}
+header{
+	border-bottom: 2px solid black;
+	margin-top: 1%;
+}
+header img{
+	width: 100%;
+}
+#button-opciones {
+	font-size: 35px;
+    color: black;
+    float: right;
+    margin-right: 10%;
+}
+header h1{
+	font-size: 21px;
+    margin: 0;
+    margin-top: 1%;
+    color: black;
+    font-weight: bold;
+}
+header .row{
+	margin-bottom: 0px !important;
+}
+.side-nav a{
+	color: black;
+	font-size: 20px;
+}
+.side-nav a i{
+	font-size: 40px;
+}
