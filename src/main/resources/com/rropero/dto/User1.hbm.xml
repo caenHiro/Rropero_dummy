@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 12/09/2016 11:51:44 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.rropero.dto.User1" table="user1" schema="public" optimistic-lock="version">
+        <id name="idCliente" type="int">
+            <column name="id_cliente" />
+            <generator class="assigned" />
+        </id>
+        <property name="nombreCliente" type="string">
+            <column name="nombre_cliente" length="50" />
+        </property>
+        <property name="EMail" type="string">
+            <column name="e_mail" length="30" />
+        </property>
+    </class>
+</hibernate-mapping>
