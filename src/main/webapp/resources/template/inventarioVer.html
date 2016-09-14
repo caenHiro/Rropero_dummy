@@ -1,1 +1,22 @@
-<h1>Ver inventario</h1>
+<div ng-controller="checkProducts" class='col-md-12 col-sm-12 col-xs-12 nopad'>
+    
+    <div class="col-md-8 col-sm-8 col-xs-11 col-cen search-container">
+        <i class="fa fa-search fa-2x col-md-1 col-sm-1 col-xs-2" aria-hidden="true"></i>
+
+        <div class='col-md-9 col-sm-9 col-xs-8'>
+        
+            <input ng-model='busqueda' placeholder="Ej: 256212 o blusa">
+  
+        </div>
+
+        
+        <button class="col-md-2 col-sm-2 col-xs-2">Buscar</button>
+
+    </div>
+    <span data-bind="busqueda"></span>
+    <table>
+        
+    </table>
+    
+    
+</div>

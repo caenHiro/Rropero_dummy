@@ -13,24 +13,31 @@
     margin-bottom: 6%;
 }
 header{
-	border-bottom: 2px solid black;
-	margin-top: 1%;
+	border-bottom: 1px solid gray;
+        height: 70px;   
 }
 header img{
-	width: 100%;
+	width: 192px;
+        padding: 26px;
+}
+header div{
+    height:100%;
 }
 #button-opciones {
-	font-size: 35px;
+    display: block;
+    font-size: 35px;
     color: black;
-    float: right;
-    margin-right: 10%;
+    line-height: 70px;
+    float:right;
 }
 header h1{
-	font-size: 21px;
+    display:block;
+    font-size: 21px;
+    line-height: 70px;
     margin: 0;
-    margin-top: 1%;
     color: black;
     font-weight: bold;
+    color: #ed1248;
 }
 header .row{
 	margin-bottom: 0px !important;
@@ -41,4 +48,24 @@ header .row{
 }
 .side-nav a i{
 	font-size: 40px;
+}
+.nopad{
+    padding: 0%;
+}
+.col-cen{
+    	display: block;
+	float: none;
+	margin: 0 auto;
+}
+
+.search-container{
+    height: auto;
+    margin-top: 1%;
+}
+.search-container *{
+    display: block;
+    height: 3rem;
+}
+.search-container i {
+    padding: 15px;
 }

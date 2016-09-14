@@ -38,6 +38,9 @@
     <script src="resources/js/lib/angular-routes.js"></script>
     <script src="resources/js/app.js"></script>
     <script src="resources/js/main.js"></script>
+    <script src="resources/js/inventarioVer.js"></script>
+    <script src="resources/js/inventarioReg.js"></script>
+    <script src="resources/js/inventarioAct.js"></script>
     
 </head>
 <body ng-app=rroperoApp>
@@ -63,16 +66,14 @@
 
     <!--Inicio Header-->
     <header>
-        <div class="row">
-            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-                <img src="resources/img/logo.png" alt="Rropero Logo">
-            </div>
-            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
-                <h1>Inventario</h1>
-            </div>
-            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                <a href="#" data-activates="opciones" id="button-opciones"><i class="fa fa-bars" aria-hidden="true"></i></a>				
-            </div>
+        <div class="col-md-2 col-sm-3 col-xs-5">
+            <img src="resources/img/logo.png" alt="Rropero Logo">
+        </div>
+        <div class="col-md-8 col-sm-8 col-xs-3">
+            <h1>Inventario</h1>
+        </div>
+        <div class="col-md-2 col-sm-1 col-xs-4">
+            <a href="#" data-activates="opciones" id="button-opciones"><i class="fa fa-bars" aria-hidden="true"></i></a>				
         </div>
     </header>
     <!--Fin Header-->
@@ -82,9 +83,5 @@
     </section>
     <!--Fin Seccion principal-->
 
-    <!--Inicializar menu de opciones-->
-    <script>
-        $("#button-opciones").sideNav();
-    </script>
 </body>
 </html>

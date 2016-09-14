@@ -5,3 +5,18 @@ rroperoApp.controller('main', function ($scope) {
 	});
 
 });
+
+rroperoApp.run(function(){
+    console.log('run');
+
+    // Initialize collapse button
+    angular.element("#button-opciones").sideNav();
+  
+    angular.element('#button-opciones').sideNav({
+        //menuWidth: 300, // Default is 240
+        closeOnClick: true
+    }
+  );
+
+});
+
