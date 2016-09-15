@@ -29,5 +29,15 @@
 		<servlet-name>appServlet</servlet-name>
 		<url-pattern>/</url-pattern>
 	</servlet-mapping>
-
+        
+        <!-- Filtros para API Inventario -->
+        <filter>
+            <filter-name>FilterInventario</filter-name>
+            <filter-class>com.rropero.filter.FilterInventario</filter-class>
+         </filter>
+	<filter-mapping>
+            <filter-name>FilterInventario</filter-name>
+            <url-pattern>/api/inventario/*</url-pattern>
+	</filter-mapping>
+  
 </web-app>

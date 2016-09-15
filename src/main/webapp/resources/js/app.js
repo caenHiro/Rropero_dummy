@@ -6,6 +6,7 @@
 
 // Aplicación
 var rroperoApp = angular.module('rroperoApp', ['ngRoute']);
+var rroperoLogin = angular.module('rroperoLogin',[]);
 
 // Rutas para la aplicacion
 rroperoApp.config(['$routeProvider', function($routeProvider){

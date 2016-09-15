@@ -1,3 +1,9 @@
+<% 
+    HttpSession httpsession=request.getSession(); 
+    if(httpsession == null || httpsession.getAttribute("rropero") == null){
+        response.sendRedirect("");
+    }
+%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ page session="false" %>
 <?xml version='1.0' encoding='UTF-8' ?>
