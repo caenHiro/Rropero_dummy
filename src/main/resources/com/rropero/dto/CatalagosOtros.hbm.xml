@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 17/09/2016 03:09:59 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.rropero.dto.CatalagosOtros" table="catalagos_otros" schema="public" optimistic-lock="version">
+        <composite-id name="id" class="com.rropero.dto.CatalagosOtrosId">
+            <key-property name="idOtro" type="int">
+                <column name="id_otro" />
+            </key-property>
+            <key-property name="sku" type="string">
+                <column name="sku" length="150" />
+            </key-property>
+            <key-property name="tabla" type="string">
+                <column name="tabla" length="150" />
+            </key-property>
+        </composite-id>
+        <property name="otroDesc" type="string">
+            <column name="otro_desc" length="150" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,5 +1,5 @@
 package com.rropero.dto;
-// Generated 12/09/2016 11:51:43 PM by Hibernate Tools 4.3.1
+// Generated 17/09/2016 03:09:58 PM by Hibernate Tools 4.3.1
 
 
 
@@ -9,36 +9,27 @@ package com.rropero.dto;
 public class RangoPrecio  implements java.io.Serializable {
 
 
-     private String categoriaMarca;
-     private String subCategoriaArticulo;
+     private RangoPrecioId id;
      private Double precioPromedio;
 
     public RangoPrecio() {
     }
 
 	
-    public RangoPrecio(String categoriaMarca) {
-        this.categoriaMarca = categoriaMarca;
+    public RangoPrecio(RangoPrecioId id) {
+        this.id = id;
     }
-    public RangoPrecio(String categoriaMarca, String subCategoriaArticulo, Double precioPromedio) {
-       this.categoriaMarca = categoriaMarca;
-       this.subCategoriaArticulo = subCategoriaArticulo;
+    public RangoPrecio(RangoPrecioId id, Double precioPromedio) {
+       this.id = id;
        this.precioPromedio = precioPromedio;
     }
    
-    public String getCategoriaMarca() {
-        return this.categoriaMarca;
+    public RangoPrecioId getId() {
+        return this.id;
     }
     
-    public void setCategoriaMarca(String categoriaMarca) {
-        this.categoriaMarca = categoriaMarca;
-    }
-    public String getSubCategoriaArticulo() {
-        return this.subCategoriaArticulo;
-    }
-    
-    public void setSubCategoriaArticulo(String subCategoriaArticulo) {
-        this.subCategoriaArticulo = subCategoriaArticulo;
+    public void setId(RangoPrecioId id) {
+        this.id = id;
     }
     public Double getPrecioPromedio() {
         return this.precioPromedio;

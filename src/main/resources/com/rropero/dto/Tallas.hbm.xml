@@ -1,18 +1,81 @@
 <?xml version="1.0"?>
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
 "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
-<!-- Generated 12/09/2016 11:51:44 PM by Hibernate Tools 4.3.1 -->
+<!-- Generated 17/09/2016 03:09:59 PM by Hibernate Tools 4.3.1 -->
 <hibernate-mapping>
     <class name="com.rropero.dto.Tallas" table="tallas" schema="public" optimistic-lock="version">
-        <id name="tipoMedida" type="string">
-            <column name="tipo_medida" length="15" />
+        <id name="idTalla" type="int">
+            <column name="id_talla" />
             <generator class="assigned" />
         </id>
-        <property name="talla" type="string">
-            <column name="talla" length="15" unique="true" />
-        </property>
         <property name="categoria" type="string">
-            <column name="categoria" length="15" unique="true" />
+            <column name="categoria" length="15" />
+        </property>
+        <property name="subCategoriaArticulo" type="string">
+            <column name="sub_categoria_articulo" length="15" />
+        </property>
+        <property name="us" type="java.lang.Double">
+            <column name="us" precision="17" scale="17" />
+        </property>
+        <property name="usDesc" type="string">
+            <column name="us_desc" length="20" />
+        </property>
+        <property name="eur" type="java.lang.Double">
+            <column name="eur" precision="17" scale="17" />
+        </property>
+        <property name="eurDesc" type="string">
+            <column name="eur_desc" length="20" />
+        </property>
+        <property name="uk" type="java.lang.Double">
+            <column name="uk" precision="17" scale="17" />
+        </property>
+        <property name="ukDesc" type="string">
+            <column name="uk_desc" length="20" />
+        </property>
+        <property name="aus" type="java.lang.Double">
+            <column name="aus" precision="17" scale="17" />
+        </property>
+        <property name="ausDesc" type="string">
+            <column name="aus_desc" length="20" />
+        </property>
+        <property name="mex" type="java.lang.Double">
+            <column name="mex" precision="17" scale="17" />
+        </property>
+        <property name="mexDesc" type="string">
+            <column name="mex_desc" length="20" />
+        </property>
+        <property name="jap" type="java.lang.Double">
+            <column name="jap" precision="17" scale="17" />
+        </property>
+        <property name="japDesc" type="string">
+            <column name="jap_desc" length="20" />
+        </property>
+        <property name="chi" type="java.lang.Double">
+            <column name="chi" precision="17" scale="17" />
+        </property>
+        <property name="chiDesc" type="string">
+            <column name="chi_desc" length="20" />
+        </property>
+        <property name="it" type="java.lang.Double">
+            <column name="it" precision="17" scale="17" />
+        </property>
+        <property name="itDesc" type="string">
+            <column name="it_desc" length="20" />
+        </property>
+        <property name="pulgadas" type="java.lang.Double">
+            <column name="pulgadas" precision="17" scale="17" />
+        </property>
+        <property name="cm" type="java.lang.Double">
+            <column name="cm" precision="17" scale="17" />
+        </property>
+        <property name="pecho" type="java.lang.Double">
+            <column name="pecho" precision="17" scale="17" />
+        </property>
+        <property name="cintura" type="java.lang.Double">
+            <column name="cintura" precision="17" scale="17" />
+        </property>
+        <property name="cadera" type="java.lang.Double">
+            <column name="cadera" precision="17" scale="17" />
         </property>
     </class>
 </hibernate-mapping>

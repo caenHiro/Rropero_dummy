@@ -10,11 +10,13 @@
     <mapping resource="com/rropero/dto/Tallas.hbm.xml"/>
     <mapping resource="com/rropero/dto/RangoPrecio.hbm.xml"/>
     <mapping resource="com/rropero/dto/EstadoPrenda.hbm.xml"/>
+    <mapping resource="com/rropero/dto/UsuarioLogin.hbm.xml"/>
     <mapping resource="com/rropero/dto/Materiales.hbm.xml"/>
     <mapping resource="com/rropero/dto/TipoEntrega.hbm.xml"/>
+    <mapping resource="com/rropero/dto/UsuarioDatos.hbm.xml"/>
     <mapping resource="com/rropero/dto/CategoriasPrincipales.hbm.xml"/>
     <mapping resource="com/rropero/dto/Producto.hbm.xml"/>
-    <mapping resource="com/rropero/dto/User1.hbm.xml"/>
+    <mapping resource="com/rropero/dto/CatalagosOtros.hbm.xml"/>
     <mapping resource="com/rropero/dto/CategoriaEvaluacion.hbm.xml"/>
   </session-factory>
 </hibernate-configuration>

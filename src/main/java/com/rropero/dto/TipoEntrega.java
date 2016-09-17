@@ -1,5 +1,5 @@
 package com.rropero.dto;
-// Generated 12/09/2016 11:51:43 PM by Hibernate Tools 4.3.1
+// Generated 17/09/2016 03:09:58 PM by Hibernate Tools 4.3.1
 
 
 

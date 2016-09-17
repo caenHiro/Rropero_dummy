@@ -16,7 +16,7 @@ public class ProductoDaoHibernate extends AbstractDao {
     /**
      * Insert a new Usuario into the database.
      *
-     * @param usuario
+     * @param CAEN
      */
     public void save(Producto producto) throws DataAccessLayerException {
         super.save(producto);

@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
 "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
-<!-- Generated 12/09/2016 11:51:44 PM by Hibernate Tools 4.3.1 -->
+<!-- Generated 17/09/2016 03:09:59 PM by Hibernate Tools 4.3.1 -->
 <hibernate-mapping>
     <class name="com.rropero.dto.TipoEntrega" table="tipo_entrega" schema="public" optimistic-lock="version">
         <id name="categoriaEntrega" type="string">

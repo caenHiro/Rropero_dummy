@@ -1,5 +1,5 @@
 package com.rropero.dto;
-// Generated 12/09/2016 11:51:43 PM by Hibernate Tools 4.3.1
+// Generated 17/09/2016 03:09:58 PM by Hibernate Tools 4.3.1
 
 
 
@@ -9,8 +9,7 @@ package com.rropero.dto;
 public class Materiales  implements java.io.Serializable {
 
 
-     private String categoriaMaterial;
-     private String meterial;
+     private MaterialesId id;
      private Double peso;
      private Double densidad;
      private Double factorEnergia;
@@ -21,12 +20,11 @@ public class Materiales  implements java.io.Serializable {
     }
 
 	
-    public Materiales(String categoriaMaterial) {
-        this.categoriaMaterial = categoriaMaterial;
+    public Materiales(MaterialesId id) {
+        this.id = id;
     }
-    public Materiales(String categoriaMaterial, String meterial, Double peso, Double densidad, Double factorEnergia, Double factorCo2, Double usoAgua) {
-       this.categoriaMaterial = categoriaMaterial;
-       this.meterial = meterial;
+    public Materiales(MaterialesId id, Double peso, Double densidad, Double factorEnergia, Double factorCo2, Double usoAgua) {
+       this.id = id;
        this.peso = peso;
        this.densidad = densidad;
        this.factorEnergia = factorEnergia;
@@ -34,19 +32,12 @@ public class Materiales  implements java.io.Serializable {
        this.usoAgua = usoAgua;
     }
    
-    public String getCategoriaMaterial() {
-        return this.categoriaMaterial;
+    public MaterialesId getId() {
+        return this.id;
     }
     
-    public void setCategoriaMaterial(String categoriaMaterial) {
-        this.categoriaMaterial = categoriaMaterial;
-    }
-    public String getMeterial() {
-        return this.meterial;
-    }
-    
-    public void setMeterial(String meterial) {
-        this.meterial = meterial;
+    public void setId(MaterialesId id) {
+        this.id = id;
     }
     public Double getPeso() {
         return this.peso;

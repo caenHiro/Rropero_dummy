@@ -1,5 +1,5 @@
 package com.rropero.dto;
-// Generated 12/09/2016 11:51:43 PM by Hibernate Tools 4.3.1
+// Generated 17/09/2016 03:09:58 PM by Hibernate Tools 4.3.1
 
 
 
@@ -9,36 +9,71 @@ package com.rropero.dto;
 public class Tallas  implements java.io.Serializable {
 
 
-     private String tipoMedida;
-     private String talla;
+     private int idTalla;
      private String categoria;
+     private String subCategoriaArticulo;
+     private Double us;
+     private String usDesc;
+     private Double eur;
+     private String eurDesc;
+     private Double uk;
+     private String ukDesc;
+     private Double aus;
+     private String ausDesc;
+     private Double mex;
+     private String mexDesc;
+     private Double jap;
+     private String japDesc;
+     private Double chi;
+     private String chiDesc;
+     private Double it;
+     private String itDesc;
+     private Double pulgadas;
+     private Double cm;
+     private Double pecho;
+     private Double cintura;
+     private Double cadera;
 
     public Tallas() {
     }
 
 	
-    public Tallas(String tipoMedida) {
-        this.tipoMedida = tipoMedida;
+    public Tallas(int idTalla) {
+        this.idTalla = idTalla;
     }
-    public Tallas(String tipoMedida, String talla, String categoria) {
-       this.tipoMedida = tipoMedida;
-       this.talla = talla;
+    public Tallas(int idTalla, String categoria, String subCategoriaArticulo, Double us, String usDesc, Double eur, String eurDesc, Double uk, String ukDesc, Double aus, String ausDesc, Double mex, String mexDesc, Double jap, String japDesc, Double chi, String chiDesc, Double it, String itDesc, Double pulgadas, Double cm, Double pecho, Double cintura, Double cadera) {
+       this.idTalla = idTalla;
        this.categoria = categoria;
+       this.subCategoriaArticulo = subCategoriaArticulo;
+       this.us = us;
+       this.usDesc = usDesc;
+       this.eur = eur;
+       this.eurDesc = eurDesc;
+       this.uk = uk;
+       this.ukDesc = ukDesc;
+       this.aus = aus;
+       this.ausDesc = ausDesc;
+       this.mex = mex;
+       this.mexDesc = mexDesc;
+       this.jap = jap;
+       this.japDesc = japDesc;
+       this.chi = chi;
+       this.chiDesc = chiDesc;
+       this.it = it;
+       this.itDesc = itDesc;
+       this.pulgadas = pulgadas;
+       this.cm = cm;
+       this.pecho = pecho;
+       this.cintura = cintura;
+       this.cadera = cadera;
     }
    
-    public String getTipoMedida() {
-        return this.tipoMedida;
+    public int getIdTalla() {
+        return this.idTalla;
     }
     
-    public void setTipoMedida(String tipoMedida) {
-        this.tipoMedida = tipoMedida;
-    }
-    public String getTalla() {
-        return this.talla;
-    }
-    
-    public void setTalla(String talla) {
-        this.talla = talla;
+    public void setIdTalla(int idTalla) {
+        this.idTalla = idTalla;
     }
     public String getCategoria() {
         return this.categoria;
@@ -46,6 +81,160 @@ public class Tallas  implements java.io.Serializable {
     
     public void setCategoria(String categoria) {
         this.categoria = categoria;
+    }
+    public String getSubCategoriaArticulo() {
+        return this.subCategoriaArticulo;
+    }
+    
+    public void setSubCategoriaArticulo(String subCategoriaArticulo) {
+        this.subCategoriaArticulo = subCategoriaArticulo;
+    }
+    public Double getUs() {
+        return this.us;
+    }
+    
+    public void setUs(Double us) {
+        this.us = us;
+    }
+    public String getUsDesc() {
+        return this.usDesc;
+    }
+    
+    public void setUsDesc(String usDesc) {
+        this.usDesc = usDesc;
+    }
+    public Double getEur() {
+        return this.eur;
+    }
+    
+    public void setEur(Double eur) {
+        this.eur = eur;
+    }
+    public String getEurDesc() {
+        return this.eurDesc;
+    }
+    
+    public void setEurDesc(String eurDesc) {
+        this.eurDesc = eurDesc;
+    }
+    public Double getUk() {
+        return this.uk;
+    }
+    
+    public void setUk(Double uk) {
+        this.uk = uk;
+    }
+    public String getUkDesc() {
+        return this.ukDesc;
+    }
+    
+    public void setUkDesc(String ukDesc) {
+        this.ukDesc = ukDesc;
+    }
+    public Double getAus() {
+        return this.aus;
+    }
+    
+    public void setAus(Double aus) {
+        this.aus = aus;
+    }
+    public String getAusDesc() {
+        return this.ausDesc;
+    }
+    
+    public void setAusDesc(String ausDesc) {
+        this.ausDesc = ausDesc;
+    }
+    public Double getMex() {
+        return this.mex;
+    }
+    
+    public void setMex(Double mex) {
+        this.mex = mex;
+    }
+    public String getMexDesc() {
+        return this.mexDesc;
+    }
+    
+    public void setMexDesc(String mexDesc) {
+        this.mexDesc = mexDesc;
+    }
+    public Double getJap() {
+        return this.jap;
+    }
+    
+    public void setJap(Double jap) {
+        this.jap = jap;
+    }
+    public String getJapDesc() {
+        return this.japDesc;
+    }
+    
+    public void setJapDesc(String japDesc) {
+        this.japDesc = japDesc;
+    }
+    public Double getChi() {
+        return this.chi;
+    }
+    
+    public void setChi(Double chi) {
+        this.chi = chi;
+    }
+    public String getChiDesc() {
+        return this.chiDesc;
+    }
+    
+    public void setChiDesc(String chiDesc) {
+        this.chiDesc = chiDesc;
+    }
+    public Double getIt() {
+        return this.it;
+    }
+    
+    public void setIt(Double it) {
+        this.it = it;
+    }
+    public String getItDesc() {
+        return this.itDesc;
+    }
+    
+    public void setItDesc(String itDesc) {
+        this.itDesc = itDesc;
+    }
+    public Double getPulgadas() {
+        return this.pulgadas;
+    }
+    
+    public void setPulgadas(Double pulgadas) {
+        this.pulgadas = pulgadas;
+    }
+    public Double getCm() {
+        return this.cm;
+    }
+    
+    public void setCm(Double cm) {
+        this.cm = cm;
+    }
+    public Double getPecho() {
+        return this.pecho;
+    }
+    
+    public void setPecho(Double pecho) {
+        this.pecho = pecho;
+    }
+    public Double getCintura() {
+        return this.cintura;
+    }
+    
+    public void setCintura(Double cintura) {
+        this.cintura = cintura;
+    }
+    public Double getCadera() {
+        return this.cadera;
+    }
+    
+    public void setCadera(Double cadera) {
+        this.cadera = cadera;
     }
 
 
