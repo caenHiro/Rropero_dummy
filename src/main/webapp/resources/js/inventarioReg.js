@@ -22,7 +22,6 @@ rroperoApp.controller('registerProduct', function($scope){
                     alert(data);
             });
             */                
-                
                 break;
             case "subcategoria":
                 break;
@@ -42,6 +41,26 @@ rroperoApp.controller('registerProduct', function($scope){
     
     /*
      * Catalogos
+     * 
+     * Primero CATEGORIAS
+     * Luego SUBCATEGORIA {cat}
+     * SUBCAT TIPO ARTICULO {cat, subcat}
+     * TALLA {cat, subcat_tipo_art}
+     * 
+     * Indepenedientes LOS RECIBO EN UN SOLO JSON:
+     * 
+     * CLIENTE
+     * MATERIAL
+     * ESTADO_PRENDA
+     * 
+     * 
+     * TODOS LOS CATALGOS TIENEN "OTRO"
+     * necesito esta lista de tablas para asociar a los inputs
+     * mando {tabla:"Tabla", descripcion:"desc"}
+     * 
+     * Para insertar POST con json
+     * 
+     * 
      */
     
     
