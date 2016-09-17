@@ -9,7 +9,71 @@ rroperoApp.controller('checkProducts', function($scope){
     console.log('controller checkProducts');
     
     $scope.productos = [
-        
+        {
+        "cat":"Ropa",
+        "cat_abrv":"ROP",
+        "subcat":"Top",
+        "subcat_abrv":"TOP",
+        "subcattipo":"Abrigos",
+        "subcattipo_abrv":"ABR",
+        "peso_amb":"1000",
+        "peso_env":"1250",
+        },
+        {
+        "cat":"Ropa",
+        "cat_abrv":"ROP",
+        "subcat":"Top",
+        "subcat_abrv":"TOP",
+        "subcattipo":"Abrigos",
+        "subcattipo_abrv":"ABR",
+        "peso_amb":"1000",
+        "peso_env":"1250",
+        },
+        {
+        "cat":"Ropa",
+        "cat_abrv":"ROP",
+        "subcat":"Top",
+        "subcat_abrv":"TOP",
+        "subcattipo":"Abrigos",
+        "subcattipo_abrv":"ABR",
+        "peso_amb":"1000",
+        "peso_env":"1250",
+        },
+        {
+        "cat":"Ropa",
+        "cat_abrv":"ROP",
+        "subcat":"Top",
+        "subcat_abrv":"TOP",
+        "subcattipo":"Abrigos",
+        "subcattipo_abrv":"ABR",
+        "peso_amb":"1000",
+        "peso_env":"1250",
+        },
+        {
+        "cat":"Ropa",
+        "cat_abrv":"ROP",
+        "subcat":"Top",
+        "subcat_abrv":"TOP",
+        "subcattipo":"Abrigos",
+        "subcattipo_abrv":"ABR",
+        "peso_amb":"1000",
+        "peso_env":"1250",
+        },
+        {
+        "cat":"Ropa",
+        "cat_abrv":"ROP",
+        "subcat":"Top",
+        "subcat_abrv":"TOP",
+        "subcattipo":"Abrigos",
+        "subcattipo_abrv":"ABR",
+        "peso_amb":"1000",
+        "peso_env":"1250",
+        },
         
     ];
+    
+    
+    $scope.checkDetail = function(id){
+        
+    }
 });

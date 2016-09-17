@@ -38,6 +38,8 @@
     
     <!--Inventario CSS-->
     <link rel="stylesheet" href="resources/css/inventario.css">
+    <link rel="stylesheet" href="resources/css/verInventario.css">
+    <link rel="stylesheet" href="resources/css/registrar.css">
     
     <!-- Rropero App-->
     <script src="resources/js/lib/angular.js"></script>
@@ -51,6 +53,7 @@
 </head>
 <body ng-app=rroperoApp>
     <!--Inicio Navegacion-->
+ 
     <ul id="opciones" class="side-nav">
         <li>
             <div class="userView">
@@ -67,7 +70,11 @@
         <li>
             <a href="#/actualizar"> <i class="fa fa-pencil-square" aria-hidden="true"></i> Actualizar registro</a>
         </li>
+        
+        
     </ul>
+    
+
     <!--Fin Navegacion-->
 
     <!--Inicio Header-->
@@ -79,7 +86,7 @@
             <h1>Inventario</h1>
         </div>
         <div class="col-md-2 col-sm-1 col-xs-4">
-            <a href="#" data-activates="opciones" id="button-opciones"><i class="fa fa-bars" aria-hidden="true"></i></a>				
+            <a href="#" data-activates="opciones" class="button-collapse show-on-large" id="button-opciones"><i class="fa fa-bars" aria-hidden="true"></i></a>				
         </div>
     </header>
     <!--Fin Header-->
