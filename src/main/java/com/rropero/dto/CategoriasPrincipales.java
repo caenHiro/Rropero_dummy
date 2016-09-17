@@ -1,5 +1,5 @@
 package com.rropero.dto;
-// Generated 12/09/2016 11:51:43 PM by Hibernate Tools 4.3.1
+// Generated 17/09/2016 03:09:58 PM by Hibernate Tools 4.3.1
 
 
 
@@ -9,39 +9,35 @@ package com.rropero.dto;
 public class CategoriasPrincipales  implements java.io.Serializable {
 
 
-     private String categoria;
+     private CategoriasPrincipalesId id;
      private String categoriaAbrev;
-     private String subCategoria;
      private String subCategoriaAbrev;
-     private String subCategoriaArticulo;
      private String subCategoriaArticuloAbrev;
      private Double pesoAmbiental;
-     private Double perosEnvio;
+     private Double pesoEnvio;
 
     public CategoriasPrincipales() {
     }
 
 	
-    public CategoriasPrincipales(String categoria) {
-        this.categoria = categoria;
+    public CategoriasPrincipales(CategoriasPrincipalesId id) {
+        this.id = id;
     }
-    public CategoriasPrincipales(String categoria, String categoriaAbrev, String subCategoria, String subCategoriaAbrev, String subCategoriaArticulo, String subCategoriaArticuloAbrev, Double pesoAmbiental, Double perosEnvio) {
-       this.categoria = categoria;
+    public CategoriasPrincipales(CategoriasPrincipalesId id, String categoriaAbrev, String subCategoriaAbrev, String subCategoriaArticuloAbrev, Double pesoAmbiental, Double pesoEnvio) {
+       this.id = id;
        this.categoriaAbrev = categoriaAbrev;
-       this.subCategoria = subCategoria;
        this.subCategoriaAbrev = subCategoriaAbrev;
-       this.subCategoriaArticulo = subCategoriaArticulo;
        this.subCategoriaArticuloAbrev = subCategoriaArticuloAbrev;
        this.pesoAmbiental = pesoAmbiental;
-       this.perosEnvio = perosEnvio;
+       this.pesoEnvio = pesoEnvio;
     }
    
-    public String getCategoria() {
-        return this.categoria;
+    public CategoriasPrincipalesId getId() {
+        return this.id;
     }
     
-    public void setCategoria(String categoria) {
-        this.categoria = categoria;
+    public void setId(CategoriasPrincipalesId id) {
+        this.id = id;
     }
     public String getCategoriaAbrev() {
         return this.categoriaAbrev;
@@ -50,26 +46,12 @@ public class CategoriasPrincipales  implements java.io.Serializable {
     public void setCategoriaAbrev(String categoriaAbrev) {
         this.categoriaAbrev = categoriaAbrev;
     }
-    public String getSubCategoria() {
-        return this.subCategoria;
-    }
-    
-    public void setSubCategoria(String subCategoria) {
-        this.subCategoria = subCategoria;
-    }
     public String getSubCategoriaAbrev() {
         return this.subCategoriaAbrev;
     }
     
     public void setSubCategoriaAbrev(String subCategoriaAbrev) {
         this.subCategoriaAbrev = subCategoriaAbrev;
-    }
-    public String getSubCategoriaArticulo() {
-        return this.subCategoriaArticulo;
-    }
-    
-    public void setSubCategoriaArticulo(String subCategoriaArticulo) {
-        this.subCategoriaArticulo = subCategoriaArticulo;
     }
     public String getSubCategoriaArticuloAbrev() {
         return this.subCategoriaArticuloAbrev;
@@ -85,12 +67,12 @@ public class CategoriasPrincipales  implements java.io.Serializable {
     public void setPesoAmbiental(Double pesoAmbiental) {
         this.pesoAmbiental = pesoAmbiental;
     }
-    public Double getPerosEnvio() {
-        return this.perosEnvio;
+    public Double getPesoEnvio() {
+        return this.pesoEnvio;
     }
     
-    public void setPerosEnvio(Double perosEnvio) {
-        this.perosEnvio = perosEnvio;
+    public void setPesoEnvio(Double pesoEnvio) {
+        this.pesoEnvio = pesoEnvio;
     }
 
 

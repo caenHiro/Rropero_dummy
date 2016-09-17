@@ -1,5 +1,5 @@
 package com.rropero.dto;
-// Generated 12/09/2016 11:51:43 PM by Hibernate Tools 4.3.1
+// Generated 17/09/2016 03:09:58 PM by Hibernate Tools 4.3.1
 
 
 
@@ -10,6 +10,7 @@ public class EstadoPrenda  implements java.io.Serializable {
 
 
      private String estadoPrenda;
+     private String estadoPrendaAbrev;
      private Double porcentajeDescuento;
 
     public EstadoPrenda() {
@@ -19,8 +20,9 @@ public class EstadoPrenda  implements java.io.Serializable {
     public EstadoPrenda(String estadoPrenda) {
         this.estadoPrenda = estadoPrenda;
     }
-    public EstadoPrenda(String estadoPrenda, Double porcentajeDescuento) {
+    public EstadoPrenda(String estadoPrenda, String estadoPrendaAbrev, Double porcentajeDescuento) {
        this.estadoPrenda = estadoPrenda;
+       this.estadoPrendaAbrev = estadoPrendaAbrev;
        this.porcentajeDescuento = porcentajeDescuento;
     }
    
@@ -30,6 +32,13 @@ public class EstadoPrenda  implements java.io.Serializable {
     
     public void setEstadoPrenda(String estadoPrenda) {
         this.estadoPrenda = estadoPrenda;
+    }
+    public String getEstadoPrendaAbrev() {
+        return this.estadoPrendaAbrev;
+    }
+    
+    public void setEstadoPrendaAbrev(String estadoPrendaAbrev) {
+        this.estadoPrendaAbrev = estadoPrendaAbrev;
     }
     public Double getPorcentajeDescuento() {
         return this.porcentajeDescuento;

@@ -1,54 +1,51 @@
 <?xml version="1.0"?>
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
 "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
-<!-- Generated 12/09/2016 11:51:44 PM by Hibernate Tools 4.3.1 -->
+<!-- Generated 17/09/2016 03:09:59 PM by Hibernate Tools 4.3.1 -->
 <hibernate-mapping>
     <class name="com.rropero.dto.Producto" table="producto" schema="public" optimistic-lock="version">
         <id name="sku" type="string">
             <column name="sku" length="150" />
             <generator class="assigned" />
         </id>
-        <property name="categoriaprincipal" type="java.lang.Integer">
-            <column name="categoriaprincipal" />
+        <property name="categoria" type="string">
+            <column name="categoria" length="15" />
         </property>
-        <property name="subcategoriaprincipal" type="java.lang.Integer">
-            <column name="subcategoriaprincipal" />
+        <property name="subCategoria" type="string">
+            <column name="sub_categoria" length="15" />
         </property>
-        <property name="subcategoria" type="java.lang.Integer">
-            <column name="subcategoria" />
+        <property name="subCategoriaArticulo" type="string">
+            <column name="sub_categoria_articulo" length="15" />
         </property>
         <property name="marca" type="string">
             <column name="marca" length="20" />
         </property>
-        <property name="talla" type="string">
-            <column name="talla" length="20" />
+        <property name="idTalla" type="java.lang.Integer">
+            <column name="id_talla" />
         </property>
-        <property name="cliente" type="java.lang.Integer">
-            <column name="cliente" />
+        <property name="idCliente" type="java.lang.Integer">
+            <column name="id_cliente" />
         </property>
-        <property name="materia" type="java.lang.Integer">
-            <column name="materia" />
+        <property name="idMaterial" type="java.lang.Integer">
+            <column name="id_material" />
+        </property>
+        <property name="estadoPrenda" type="string">
+            <column name="estado_prenda" length="20" />
+        </property>
+        <property name="categoriaEntrega" type="string">
+            <column name="categoria_entrega" length="150" />
+        </property>
+        <property name="precio" type="java.lang.Double">
+            <column name="precio" precision="17" scale="17" />
         </property>
         <property name="fechaentrega" type="date">
             <column name="fechaentrega" length="13" />
         </property>
-        <property name="horaentrega" type="time">
-            <column name="horaentrega" length="15" />
+        <property name="nombreArticulo" type="string">
+            <column name="nombre_articulo" length="150" />
         </property>
         <property name="fechaventa" type="date">
             <column name="fechaventa" length="13" />
-        </property>
-        <property name="horaventa" type="time">
-            <column name="horaventa" length="15" />
-        </property>
-        <property name="estado" type="string">
-            <column name="estado" length="20" />
-        </property>
-        <property name="nombredelarticuloventa" type="string">
-            <column name="nombredelarticuloventa" length="50" />
-        </property>
-        <property name="categoriacalidad" type="java.lang.Integer">
-            <column name="categoriacalidad" />
         </property>
         <property name="descripcion" type="string">
             <column name="descripcion" length="150" />
@@ -56,17 +53,8 @@
         <property name="shopify" type="java.lang.Boolean">
             <column name="shopify" />
         </property>
-        <property name="modoentrega" type="string">
-            <column name="modoentrega" length="150" />
-        </property>
-        <property name="preciofinal" type="java.lang.Double">
-            <column name="preciofinal" precision="17" scale="17" />
-        </property>
-        <property name="pesoproducto" type="java.lang.Integer">
-            <column name="pesoproducto" />
-        </property>
-        <property name="pesoproductoenvio" type="java.lang.Integer">
-            <column name="pesoproductoenvio" />
+        <property name="precioFinal" type="java.lang.Double">
+            <column name="precio_final" precision="17" scale="17" />
         </property>
         <property name="existencia" type="java.lang.Integer">
             <column name="existencia" />

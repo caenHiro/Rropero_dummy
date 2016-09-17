@@ -1,5 +1,5 @@
 package com.rropero.dto;
-// Generated 12/09/2016 11:51:43 PM by Hibernate Tools 4.3.1
+// Generated 17/09/2016 03:09:58 PM by Hibernate Tools 4.3.1
 
 
 import java.util.Date;
@@ -11,26 +11,22 @@ public class Producto  implements java.io.Serializable {
 
 
      private String sku;
-     private Integer categoriaprincipal;
-     private Integer subcategoriaprincipal;
-     private Integer subcategoria;
+     private String categoria;
+     private String subCategoria;
+     private String subCategoriaArticulo;
      private String marca;
-     private String talla;
-     private Integer cliente;
-     private Integer materia;
+     private Integer idTalla;
+     private Integer idCliente;
+     private Integer idMaterial;
+     private String estadoPrenda;
+     private String categoriaEntrega;
+     private Double precio;
      private Date fechaentrega;
-     private Date horaentrega;
+     private String nombreArticulo;
      private Date fechaventa;
-     private Date horaventa;
-     private String estado;
-     private String nombredelarticuloventa;
-     private Integer categoriacalidad;
      private String descripcion;
      private Boolean shopify;
-     private String modoentrega;
-     private Double preciofinal;
-     private Integer pesoproducto;
-     private Integer pesoproductoenvio;
+     private Double precioFinal;
      private Integer existencia;
 
     public Producto() {
@@ -40,28 +36,24 @@ public class Producto  implements java.io.Serializable {
     public Producto(String sku) {
         this.sku = sku;
     }
-    public Producto(String sku, Integer categoriaprincipal, Integer subcategoriaprincipal, Integer subcategoria, String marca, String talla, Integer cliente, Integer materia, Date fechaentrega, Date horaentrega, Date fechaventa, Date horaventa, String estado, String nombredelarticuloventa, Integer categoriacalidad, String descripcion, Boolean shopify, String modoentrega, Double preciofinal, Integer pesoproducto, Integer pesoproductoenvio, Integer existencia) {
+    public Producto(String sku, String categoria, String subCategoria, String subCategoriaArticulo, String marca, Integer idTalla, Integer idCliente, Integer idMaterial, String estadoPrenda, String categoriaEntrega, Double precio, Date fechaentrega, String nombreArticulo, Date fechaventa, String descripcion, Boolean shopify, Double precioFinal, Integer existencia) {
        this.sku = sku;
-       this.categoriaprincipal = categoriaprincipal;
-       this.subcategoriaprincipal = subcategoriaprincipal;
-       this.subcategoria = subcategoria;
+       this.categoria = categoria;
+       this.subCategoria = subCategoria;
+       this.subCategoriaArticulo = subCategoriaArticulo;
        this.marca = marca;
-       this.talla = talla;
-       this.cliente = cliente;
-       this.materia = materia;
+       this.idTalla = idTalla;
+       this.idCliente = idCliente;
+       this.idMaterial = idMaterial;
+       this.estadoPrenda = estadoPrenda;
+       this.categoriaEntrega = categoriaEntrega;
+       this.precio = precio;
        this.fechaentrega = fechaentrega;
-       this.horaentrega = horaentrega;
+       this.nombreArticulo = nombreArticulo;
        this.fechaventa = fechaventa;
-       this.horaventa = horaventa;
-       this.estado = estado;
-       this.nombredelarticuloventa = nombredelarticuloventa;
-       this.categoriacalidad = categoriacalidad;
        this.descripcion = descripcion;
        this.shopify = shopify;
-       this.modoentrega = modoentrega;
-       this.preciofinal = preciofinal;
-       this.pesoproducto = pesoproducto;
-       this.pesoproductoenvio = pesoproductoenvio;
+       this.precioFinal = precioFinal;
        this.existencia = existencia;
     }
    
@@ -72,26 +64,26 @@ public class Producto  implements java.io.Serializable {
     public void setSku(String sku) {
         this.sku = sku;
     }
-    public Integer getCategoriaprincipal() {
-        return this.categoriaprincipal;
+    public String getCategoria() {
+        return this.categoria;
     }
     
-    public void setCategoriaprincipal(Integer categoriaprincipal) {
-        this.categoriaprincipal = categoriaprincipal;
+    public void setCategoria(String categoria) {
+        this.categoria = categoria;
     }
-    public Integer getSubcategoriaprincipal() {
-        return this.subcategoriaprincipal;
-    }
-    
-    public void setSubcategoriaprincipal(Integer subcategoriaprincipal) {
-        this.subcategoriaprincipal = subcategoriaprincipal;
-    }
-    public Integer getSubcategoria() {
-        return this.subcategoria;
+    public String getSubCategoria() {
+        return this.subCategoria;
     }
     
-    public void setSubcategoria(Integer subcategoria) {
-        this.subcategoria = subcategoria;
+    public void setSubCategoria(String subCategoria) {
+        this.subCategoria = subCategoria;
+    }
+    public String getSubCategoriaArticulo() {
+        return this.subCategoriaArticulo;
+    }
+    
+    public void setSubCategoriaArticulo(String subCategoriaArticulo) {
+        this.subCategoriaArticulo = subCategoriaArticulo;
     }
     public String getMarca() {
         return this.marca;
@@ -100,26 +92,47 @@ public class Producto  implements java.io.Serializable {
     public void setMarca(String marca) {
         this.marca = marca;
     }
-    public String getTalla() {
-        return this.talla;
+    public Integer getIdTalla() {
+        return this.idTalla;
     }
     
-    public void setTalla(String talla) {
-        this.talla = talla;
+    public void setIdTalla(Integer idTalla) {
+        this.idTalla = idTalla;
     }
-    public Integer getCliente() {
-        return this.cliente;
-    }
-    
-    public void setCliente(Integer cliente) {
-        this.cliente = cliente;
-    }
-    public Integer getMateria() {
-        return this.materia;
+    public Integer getIdCliente() {
+        return this.idCliente;
     }
     
-    public void setMateria(Integer materia) {
-        this.materia = materia;
+    public void setIdCliente(Integer idCliente) {
+        this.idCliente = idCliente;
+    }
+    public Integer getIdMaterial() {
+        return this.idMaterial;
+    }
+    
+    public void setIdMaterial(Integer idMaterial) {
+        this.idMaterial = idMaterial;
+    }
+    public String getEstadoPrenda() {
+        return this.estadoPrenda;
+    }
+    
+    public void setEstadoPrenda(String estadoPrenda) {
+        this.estadoPrenda = estadoPrenda;
+    }
+    public String getCategoriaEntrega() {
+        return this.categoriaEntrega;
+    }
+    
+    public void setCategoriaEntrega(String categoriaEntrega) {
+        this.categoriaEntrega = categoriaEntrega;
+    }
+    public Double getPrecio() {
+        return this.precio;
+    }
+    
+    public void setPrecio(Double precio) {
+        this.precio = precio;
     }
     public Date getFechaentrega() {
         return this.fechaentrega;
@@ -128,12 +141,12 @@ public class Producto  implements java.io.Serializable {
     public void setFechaentrega(Date fechaentrega) {
         this.fechaentrega = fechaentrega;
     }
-    public Date getHoraentrega() {
-        return this.horaentrega;
+    public String getNombreArticulo() {
+        return this.nombreArticulo;
     }
     
-    public void setHoraentrega(Date horaentrega) {
-        this.horaentrega = horaentrega;
+    public void setNombreArticulo(String nombreArticulo) {
+        this.nombreArticulo = nombreArticulo;
     }
     public Date getFechaventa() {
         return this.fechaventa;
@@ -141,34 +154,6 @@ public class Producto  implements java.io.Serializable {
     
     public void setFechaventa(Date fechaventa) {
         this.fechaventa = fechaventa;
-    }
-    public Date getHoraventa() {
-        return this.horaventa;
-    }
-    
-    public void setHoraventa(Date horaventa) {
-        this.horaventa = horaventa;
-    }
-    public String getEstado() {
-        return this.estado;
-    }
-    
-    public void setEstado(String estado) {
-        this.estado = estado;
-    }
-    public String getNombredelarticuloventa() {
-        return this.nombredelarticuloventa;
-    }
-    
-    public void setNombredelarticuloventa(String nombredelarticuloventa) {
-        this.nombredelarticuloventa = nombredelarticuloventa;
-    }
-    public Integer getCategoriacalidad() {
-        return this.categoriacalidad;
-    }
-    
-    public void setCategoriacalidad(Integer categoriacalidad) {
-        this.categoriacalidad = categoriacalidad;
     }
     public String getDescripcion() {
         return this.descripcion;
@@ -184,33 +169,12 @@ public class Producto  implements java.io.Serializable {
     public void setShopify(Boolean shopify) {
         this.shopify = shopify;
     }
-    public String getModoentrega() {
-        return this.modoentrega;
+    public Double getPrecioFinal() {
+        return this.precioFinal;
     }
     
-    public void setModoentrega(String modoentrega) {
-        this.modoentrega = modoentrega;
-    }
-    public Double getPreciofinal() {
-        return this.preciofinal;
-    }
-    
-    public void setPreciofinal(Double preciofinal) {
-        this.preciofinal = preciofinal;
-    }
-    public Integer getPesoproducto() {
-        return this.pesoproducto;
-    }
-    
-    public void setPesoproducto(Integer pesoproducto) {
-        this.pesoproducto = pesoproducto;
-    }
-    public Integer getPesoproductoenvio() {
-        return this.pesoproductoenvio;
-    }
-    
-    public void setPesoproductoenvio(Integer pesoproductoenvio) {
-        this.pesoproductoenvio = pesoproductoenvio;
+    public void setPrecioFinal(Double precioFinal) {
+        this.precioFinal = precioFinal;
     }
     public Integer getExistencia() {
         return this.existencia;

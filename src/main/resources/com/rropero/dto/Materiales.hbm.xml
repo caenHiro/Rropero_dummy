@@ -1,16 +1,20 @@
 <?xml version="1.0"?>
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
 "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
-<!-- Generated 12/09/2016 11:51:44 PM by Hibernate Tools 4.3.1 -->
+<!-- Generated 17/09/2016 03:09:59 PM by Hibernate Tools 4.3.1 -->
 <hibernate-mapping>
     <class name="com.rropero.dto.Materiales" table="materiales" schema="public" optimistic-lock="version">
-        <id name="categoriaMaterial" type="string">
-            <column name="categoria_material" length="15" />
-            <generator class="assigned" />
-        </id>
-        <property name="meterial" type="string">
-            <column name="meterial" length="15" unique="true" />
-        </property>
+        <composite-id name="id" class="com.rropero.dto.MaterialesId">
+            <key-property name="idMaterial" type="int">
+                <column name="id_material" />
+            </key-property>
+            <key-property name="categoriaMaterial" type="string">
+                <column name="categoria_material" length="15" />
+            </key-property>
+            <key-property name="meterial" type="string">
+                <column name="meterial" length="15" />
+            </key-property>
+        </composite-id>
         <property name="peso" type="java.lang.Double">
             <column name="peso" precision="17" scale="17" />
         </property>

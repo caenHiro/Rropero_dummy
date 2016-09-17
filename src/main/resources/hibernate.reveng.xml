@@ -2,13 +2,15 @@
 <!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd">
 <hibernate-reverse-engineering>
   <schema-selection match-catalog="rropero" match-schema="public"/>
-  <table-filter match-name="tipo_entrega"/>
-  <table-filter match-name="materiales"/>
-  <table-filter match-name="producto"/>
-  <table-filter match-name="rango_precio"/>
-  <table-filter match-name="user1"/>
-  <table-filter match-name="estado_prenda"/>
-  <table-filter match-name="tallas"/>
   <table-filter match-name="categoria_evaluacion"/>
+  <table-filter match-name="catalagos_otros"/>
+  <table-filter match-name="tipo_entrega"/>
+  <table-filter match-name="usuario_datos"/>
+  <table-filter match-name="producto"/>
+  <table-filter match-name="materiales"/>
+  <table-filter match-name="rango_precio"/>
+  <table-filter match-name="estado_prenda"/>
+  <table-filter match-name="usuario_login"/>
+  <table-filter match-name="tallas"/>
   <table-filter match-name="categorias_principales"/>
 </hibernate-reverse-engineering>

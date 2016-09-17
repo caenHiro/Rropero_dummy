@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 17/09/2016 03:09:59 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.rropero.dto.UsuarioDatos" table="usuario_datos" schema="public" optimistic-lock="version">
+        <id name="idDatosCliente" type="int">
+            <column name="id_datos_cliente" />
+            <generator class="assigned" />
+        </id>
+        <property name="tipoCliente" type="string">
+            <column name="tipo_cliente" length="25" />
+        </property>
+        <set name="usuarioLogins" table="usuario_login" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="id_datos_cliente" not-null="true" />
+            </key>
+            <one-to-many class="com.rropero.dto.UsuarioLogin" />
+        </set>
+    </class>
+</hibernate-mapping>
