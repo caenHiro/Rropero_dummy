@@ -13,9 +13,33 @@
         <button class="col-md-2 col-sm-2 col-xs-2">Buscar</button>
 
     </div>
-    <span data-bind="busqueda"></span>
-    <table>
-        
+    
+    
+    <table class='content'>
+        <tr>
+            <td>Categorias</td>
+            <td>Abreviaciones</td>
+            <td>Suc Categoria principal</td>
+            <td>Abreviaciones</td>
+            <td>Sub categroias - Tipo de articulo</td>
+            <td>Abreviaciones</td>
+            <td>Peso ambiental en gramos</td>
+            <td>Peso envio en gramos</td>
+            <td>Detalle</td>
+        </tr>
+        <tr ng-repeat="p in productos | filter:busqueda">
+            <td>{{p.cat}}</td>
+            <td>{{p.cat_abrv}}</td>
+            <td>{{p.subcat}}</td>
+            <td>{{p.subcat_abrv}}</td>
+            <td>{{p.subcattipo}}</td>
+            <td>{{p.subcattipo_abrv}}</td>
+            <td>{{p.peso_amb}}</td>
+            <td>{{p.peso_env}}</td>
+            <td>
+                <button ng-click="checkDetail(p.id)">ver</button>
+            </td>
+        </tr>
     </table>
     
     
