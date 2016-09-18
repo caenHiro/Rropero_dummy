@@ -1,5 +1,7 @@
-package com.rropero;
+package com.rropero.dao;
 
+import com.rropero.DataAccessLayerException;
+import com.rropero.HibernateFactory;
 import java.util.List;
 import org.hibernate.HibernateException;
 import org.hibernate.Query;

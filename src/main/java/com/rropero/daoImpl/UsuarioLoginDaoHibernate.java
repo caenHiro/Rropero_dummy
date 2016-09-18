@@ -1,6 +1,6 @@
 
-package com.rropero.generic;
-import com.rropero.AbstractDao;
+package com.rropero.daoImpl;
+import com.rropero.dao.AbstractDao;
 import com.rropero.DataAccessLayerException;
 import com.rropero.dto.UsuarioLogin;
 
@@ -19,10 +19,10 @@ public class UsuarioLoginDaoHibernate  extends AbstractDao{
     /**
      * Insert a new Usuario into the database.
      *
-     * @param CAEN
+     * @param usuario
      */
-    public void save(UsuarioLogin producto) throws DataAccessLayerException {
-        super.save(producto);
+    public void save(UsuarioLogin usuario) throws DataAccessLayerException {
+        super.save(usuario);
     }
 
     /**
@@ -30,8 +30,8 @@ public class UsuarioLoginDaoHibernate  extends AbstractDao{
      *
      * @param usuario
      */
-    public void update(UsuarioLogin producto) throws DataAccessLayerException {
-        super.update(producto);
+    public void update(UsuarioLogin usuario) throws DataAccessLayerException {
+        super.update(usuario);
     }
 
     /**
@@ -39,8 +39,8 @@ public class UsuarioLoginDaoHibernate  extends AbstractDao{
      *
      * @param usuario
      */
-    public void delete(UsuarioLogin producto) throws DataAccessLayerException {
-        super.delete(producto);
+    public void delete(UsuarioLogin usuario) throws DataAccessLayerException {
+        super.delete(usuario);
     }
 
     /**
