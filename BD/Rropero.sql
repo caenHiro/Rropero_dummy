@@ -5,11 +5,11 @@
 --
 
 create table categorias_principales(
-categoria varchar(15) unique,
+categoria varchar(15) ,
 categoria_abrev  varchar(5),
-sub_categoria varchar(15) unique,
+sub_categoria varchar(15) ,
 sub_categoria_abrev varchar(5),
-sub_categoria_articulo varchar(15) unique ,
+sub_categoria_articulo varchar(50)  ,
 sub_categoria_articulo_abrev varchar(5),
 peso_ambiental float,
 peso_envio float ,
@@ -20,7 +20,7 @@ primary key(categoria,sub_categoria,sub_categoria_articulo)
 create table materiales (
 id_material serial unique,
 categoria_material varchar(15) , 
-meterial varchar(15) , 
+meterial varchar(50) , 
 peso float,
 densidad float,
 factor_energia float,
@@ -44,11 +44,12 @@ categoria_entrega_abrev varchar(5)
 
 
 create table rango_precio(
-categoria_marca varchar(15) unique, 
-sub_categoria_articulo varchar(15) unique, 
+categoria_marca varchar(50) , 
+sub_categoria_articulo varchar(50) , 
 precio_promedio float,
 primary key (categoria_marca , sub_categoria_articulo)
 );
+
 
 --alter table rango_precio add constraint sub_categoria_articulo foreign key (sub_categoria_articulo) references categorias_principales (sub_categoria_articulo) ;
 
@@ -62,7 +63,7 @@ categoria_marca  varchar(15)
 
 
 create table estado_prenda(
-estado_prenda varchar(15) primary key, 
+estado_prenda varchar(50) primary key, 
 estado_prenda_abrev varchar(5) , 
 porcentaje_descuento float
 );
@@ -70,7 +71,7 @@ porcentaje_descuento float
 create table tallas (
 id_talla  serial unique,
 categoria varchar (15) , 
-sub_categoria_articulo varchar (15) , 
+sub_categoria_articulo varchar (50) , 
 us float,
 us_desc varchar(20), 
 eur float ,

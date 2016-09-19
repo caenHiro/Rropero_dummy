@@ -1,0 +1,46 @@
+Ropa  ,ROP,Top ,TOP,Abrigos,ABR,1000,1150
+Ropa  ,ROP,Top ,TOP,Blusas,BLU,250,400
+Ropa  ,ROP,Top ,TOP,Camisas ,CAM,300,450
+Ropa  ,ROP,Top ,TOP,Chalecos ,CHL,300,450
+Ropa  ,ROP,Top ,TOP,Chamarras ,CHA,400,550
+Ropa  ,ROP,Top ,TOP,Sacos,SAC,400,550
+Ropa  ,ROP,Top ,TOP,Sudaderas,SUD,400,550
+Ropa  ,ROP,Top ,TOP,Sueteres,SUE,400,550
+Ropa  ,ROP,Top ,TOP,Playeras ,PLA,200,350
+Ropa  ,ROP,Bottoms,BOT,Faldas ,FAL,300,450
+Ropa  ,ROP,Bottoms,BOT,Jeans,JEA,350,500
+Ropa  ,ROP,Bottoms,BOT,Leggings,LEG,300,450
+Ropa  ,ROP,Bottoms,BOT,Pantalones,PAN,400,550
+Ropa  ,ROP,Bottoms,BOT,Pants,PAS,400,550
+Ropa  ,ROP,Bottoms,BOT,Shorts,SHO,250,400
+Ropa  ,ROP,Full Body,FLB,Conjuntos,CON,950,1100
+Ropa  ,ROP,Full Body,FLB,Vestidos,VES,500,650
+Ropa  ,ROP,Full Body,FLB,Pijamas,PIJ,300,450
+Ropa  ,ROP,Full Body,FLB,De playa,DPY,120,270
+Bolsos  ,BOL,,,Bolsas,BLA,300,450
+Bolsos  ,BOL,,,Carteras y Monederos,CYM,300,450
+Bolsos  ,BOL,,,Maletas,MAL,2000,2150
+Bolsos  ,BOL,,,Mochilas,MCH,500,650
+Bolsos  ,BOL,,,Estuche para laptop,EST,200,350
+Bolsos  ,BOL,,,Portafolios,POR,1000,1150
+Accesorios,ACC,,,Bufandas . Panioletas o Mascada y Pashminas,BPM,150,300
+Accesorios,ACC,,,Calcetas y Medias,CME,70,220
+Accesorios,ACC,,,Cinturones,CIN,150,300
+Accesorios,ACC,,,Cosmetiqueras,COS,100,250
+Accesorios,ACC,,,Gorras Y Gorros,GRS,120,270
+Accesorios,ACC,,,Guantes,GUA,100,250
+Accesorios,ACC,,,Paniuelos,PANI,50,200
+Accesorios,ACC,,,Pulseras y Relojes,PYR,200,350
+Accesorios,ACC,,,Lentes,LEN,100,250
+Calzado  ,CAL,,,Alpargatas,ALP,500,650
+Calzado  ,CAL,,,Botas,BTS,1300,1450
+Calzado  ,CAL,,,Botines,BOT,1200,1350
+Calzado  ,CAL,,,Plataformas,PLA,650,800
+Calzado  ,CAL,,,Flats,FLA,400,550
+Calzado  ,CAL,,,Mocasines,MOC,700,850
+Calzado  ,CAL,,,Pantuflas,PAN,350,500
+Calzado  ,CAL,,,Sandalias y Chanclas,SYC,400,550
+Calzado  ,CAL,,,Tenis,TEN,700,850
+Calzado  ,CAL,,,Zapatillas DE Tacon,TAC,700,850
+Calzado  ,CAL,,,Suecos,SUE,650,800
+Calzado  ,CAL,,,Zapatos,ZAP,700,850

@@ -8,7 +8,7 @@ import java.util.List;
 
 /**
  *
- * @author CaenHiro
+ * @author Caen
  */
 public class UsuarioLoginDaoHibernate  extends AbstractDao{
     

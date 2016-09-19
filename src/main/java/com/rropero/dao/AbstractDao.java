@@ -10,7 +10,7 @@ import org.hibernate.Transaction;
 
 /**
  *
- * @author
+ * @author CAEN
  */
 public abstract class AbstractDao {
 
