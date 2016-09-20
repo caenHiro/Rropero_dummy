@@ -77,25 +77,21 @@ us_desc varchar(20),
 eur float ,
 eur_desc varchar(20),
 uk float ,
-uk_desc varchar(20), 
-aus float ,
-aus_desc varchar(20), 
 mex float , 
 mex_desc varchar(20),
-jap float ,
-jap_desc varchar(20), 
-chi float , 
-chi_desc varchar(20),
 it float , 
-it_desc varchar(20),
-pulgadas float,
-cm float , 
+aus float ,
+jap float ,
+chi float , 
 pecho float , 
 cintura float , 
 cadera float ,
+pulgadas float,
+cm float ,
 primary key (id_talla)
 );
 
+--drop table tallas;
 --alter table tallas add constraint id_talla primary key (id_talla);
 --alter table tallas add constraint sub_categoria_articulo foreign key (sub_categoria_articulo) references categorias_principales (sub_categoria_articulo) ;
 --alter table tallas add constraint categoria foreign key (categoria) references categorias_principales (categoria) ;
