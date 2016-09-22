@@ -1,4 +1,99 @@
 <div ng-controller="updateProduct" class="col-md-12 col-sm-12 col-xs-12">
-    <h1>Actualizar</h1>
+    <div class="col-md-8 col-sm-8 col-xs-11 col-cen search-container">
+        <i class="fa fa-search fa-2x col-md-1 col-sm-1 col-xs-2" aria-hidden="true"></i>
+
+        <div class='col-md-9 col-sm-9 col-xs-8'>
+        
+            <input ng-model='busqueda' placeholder="Ingresa el SKU de la prenda que quieras editar">
+  
+        </div>
+
+        
+        <button class="col-md-2 col-sm-2 col-xs-2">Buscar</button>
+
+        
+        
+        <div id="result-c">
+            <form>
+                <span class="col-md-12 col-sm-12 col-xs-12">SKU: </span>
+
+                <span>Nombre</span>
+                <input ng-model="nombre" value="nombre">
+
+                <span>Descripcion</span>
+                <input ng-model="desc" value="desc">
+
+                <span>Categoria</span>
+                <input list="categoria" ng-model="cat" value="cat">
+                <datalist id="categoria">
+                    <option ng-repeat="op in cats" value="op.desc"></option>
+                </datalist>
+
+
+                <span>Subcategoria</span>
+                <input list="subcategoria" ng-model="subcat" value="subcat">
+                <datalist id="subcategoria">
+                    <option ng-repeat="op in subcat" value="op.desc"></option>
+                </datalist>
+
+
+                <span>Subcategoria articulo</span>
+                <input list="subcategoria_art" ng-model="subcat_art" value="subcat_art">
+                <datalist id="subcategoria_art">
+                    <option ng-repeat="op in subcats_art" value="op.desc"></option>
+                </datalist>
+
+                <span>Marca</span>
+                <input ng-model="marca" value="marca">
+
+                <span>Talla</span>
+                <input list="talla" ng-model="talla" value="talla">
+                <datalist id="talla">
+                    <option ng-repeat="op in tallas" value="op.desc"></option>
+                </datalist>
+
+                <!-- Sugiere cientes que ya existes -->
+                <span>Cliente</span>
+                <input list="clientes" ng-model="cliente" value="cliente">
+                <datalist id="clientes">
+                    <option ng-repeat="op in clientes" value="op.desc"></option>
+                </datalist>
+
+                <span>Material</span>
+                <input list="material" ng-model="material" value="material">
+                <datalist id="material">
+                    <option ng-repeat="op in materiales" value="op.desc"></option>
+                </datalist>
+
+                <span>Estado de a prenda</span>
+                <input list="estado" ng-model="estado" value="estado">
+                <datalist id="estado">
+                    <option ng-repeat="op in estados" value="op.desc"></option>
+                </datalist>        
+
+                <span>Fecha de entrega</span>
+                <input ng-model="fecha_ent" value="fecha_ent">
+
+                <div>
+                    <span>Shopify</span>
+                    <!-- Rounded switch -->
+                    <label class="switch" ng-model="shopify" value="shopify">
+                      <input type="checkbox">
+                      <div class="sliderr round"></div>
+                    </label>            
+
+                </div>
+
+                <span>Precio final</span>
+                <input ng-model="precio_final" value="precio_final">
+
+                <button ng-click="updateProduct()">Actualizar</button>
+
+            </form>            
+            
+        </div>
+        
+        
+    </div>
 </div>
 

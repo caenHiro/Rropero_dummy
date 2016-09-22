@@ -1,80 +1,84 @@
 <div ng-controller="registerProduct" class="col-md-12 col-sm-12 col-xs-12">
-    <h1>Registrar</h1>
-    <form>
-        <span class="col-md-12 col-sm-12 col-xs-12">SKU: </span>
-        
-        <span>Nombre</span>
-        <input ng-model="nombre">
-        
-        <span>Descripcion</span>
-        <input ng-model="desc">
-        
-        <span>Categoria</span>
-        <input list="categoria" ng-model="cat">
-        <datalist id="categoria">
-            <option ng-repeat="op in cats" value="op.desc"></option>
-        </datalist>
+    <div class="container-1 col-md-12 col-sm-12 col-xs-12">
+        <h1>Registrar</h1>
+        <form>
+            <span class="col-md-12 col-sm-12 col-xs-12">SKU: </span>
+
+            <span class="col-md-12 col-sm-12 col-xs-12">Nombre</span>
+            <input ng-model="nombre">
+
+            <span>Descripcion</span>
+            <input ng-model="desc">
+
+            <span>Categoria</span>
+            <input list="categoria" ng-model="cat">
+            <datalist id="categoria">
+                <option ng-repeat="op in cats" value="op.desc"></option>
+            </datalist>
 
 
-        <span>Subcategoria</span>
-        <input list="subcategoria" ng-model="subcat">
-        <datalist id="subcategoria">
-            <option ng-repeat="op in subcat" value="op.desc"></option>
-        </datalist>
+            <span>Subcategoria</span>
+            <input list="subcategoria" ng-model="subcat">
+            <datalist id="subcategoria">
+                <option ng-repeat="op in subcat" value="op.desc"></option>
+            </datalist>
 
 
-        <span>Subcategoria articulo</span>
-        <input list="subcategoria_art" ng-model="subcat_art">
-        <datalist id="subcategoria_art">
-            <option ng-repeat="op in subcats_art" value="op.desc"></option>
-        </datalist>
+            <span>Subcategoria articulo</span>
+            <input list="subcategoria_art" ng-model="subcat_art">
+            <datalist id="subcategoria_art">
+                <option ng-repeat="op in subcats_art" value="op.desc"></option>
+            </datalist>
 
-        <span>Marca</span>
-        <input ng-model="marca">
+            <span>Marca</span>
+            <input ng-model="marca">
 
-        <span>Talla</span>
-        <input list="talla" ng-model="talla">
-        <datalist id="talla">
-            <option ng-repeat="op in tallas" value="op.desc"></option>
-        </datalist>
+            <span>Talla</span>
+            <input list="talla" ng-model="talla">
+            <datalist id="talla">
+                <option ng-repeat="op in tallas" value="op.desc"></option>
+            </datalist>
 
-        <!-- Sugiere cientes que ya existes -->
-        <span>Cliente</span>
-        <input list="clientes" ng-model="cliente">
-        <datalist id="clientes">
-            <option ng-repeat="op in clientes" value="op.desc"></option>
-        </datalist>
+            <!-- Sugiere cientes que ya existes -->
+            <span>Cliente</span>
+            <input list="clientes" ng-model="cliente">
+            <datalist id="clientes">
+                <option ng-repeat="op in clientes" value="op.desc"></option>
+            </datalist>
 
-        <span>Material</span>
-        <input list="material" ng-model="material">
-        <datalist id="material">
-            <option ng-repeat="op in materiales" value="op.desc"></option>
-        </datalist>
-        
-        <span>Estado de a prenda</span>
-        <input list="estado" ng-model="estado">
-        <datalist id="estado">
-            <option ng-repeat="op in estados" value="op.desc"></option>
-        </datalist>        
-        
-        <span>Fecha de entrega</span>
-        <input ng-model="fecha_ent">
-        
-        <div>
-            <span>Shopify</span>
-            <!-- Rounded switch -->
-            <label class="switch" ng-model="shopify">
-              <input type="checkbox">
-              <div class="sliderr round"></div>
-            </label>            
-            
-        </div>
-            
-        <span>Precio final</span>
-        <input ng-model="precio_final">
-        
-        <button>Registrar</button>
-        
-    </form>
+            <span>Material</span>
+            <input list="material" ng-model="material">
+            <datalist id="material">
+                <option ng-repeat="op in materiales" value="op.desc"></option>
+            </datalist>
+
+            <span>Estado de a prenda</span>
+            <input list="estado" ng-model="estado">
+            <datalist id="estado">
+                <option ng-repeat="op in estados" value="op.desc"></option>
+            </datalist>        
+
+            <span>Fecha de entrega</span>
+            <input ng-model="fecha_ent">
+
+            <div>
+                <span>Shopify</span>
+                <!-- Rounded switch -->
+                <label class="switch" ng-model="shopify">
+                  <input type="checkbox">
+                  <div class="sliderr round"></div>
+                </label>            
+
+            </div>
+
+            <span>Precio final</span>
+            <input ng-model="precio_final">
+
+            <button>Registrar</button>
+
+        </form>        
+    </div>
+    
+
 </div>
 

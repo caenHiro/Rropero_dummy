@@ -9,6 +9,13 @@ and open the template in the editor.
 */
 
 
+.container-1{
+    padding: 0px 100px;
+}
+
+span {
+    font-weight: bold;
+}
 /* The switch - the box around the slider */
 .switch {
   position: relative;
