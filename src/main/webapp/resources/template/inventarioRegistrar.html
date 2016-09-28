@@ -31,7 +31,10 @@
             </datalist>
 
             <span>Marca</span>
-            <input ng-model="marca">
+            <input list="marca" ng-model="marca" value="marca">
+            <datalist id="marca">
+                <option ng-repeat="op in marcas" value="op.desc"></option>
+            </datalist>
 
             <span>Talla</span>
             <input list="talla" ng-model="talla">
